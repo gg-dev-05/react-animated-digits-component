@@ -2,7 +2,7 @@
   "name": "react-animated-digits-component",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "rollup -c",
     "start": "rollup -c -w"
@@ -37,7 +37,9 @@
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "react",
     "typescript",
