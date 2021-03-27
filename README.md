@@ -2,6 +2,8 @@
 
 A react component to display digits in an animated way.
 
+Check out the live demo of the component [here](https://react-animated-digits.netlify.app/)
+
 ## Installation
 
 ```
