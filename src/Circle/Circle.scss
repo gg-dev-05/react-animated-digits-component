@@ -1,0 +1,328 @@
+* {
+  box-sizing: border-box;
+}
+
+@mixin animation-mixin($name, $angle) {
+  @keyframes #{$name} {
+    100% {
+      transform: rotate($angle);
+    }
+  }
+}
+
+@mixin animation-mixin2($name, $from, $to) {
+  @keyframes #{$name} {
+    0% {
+      transform: rotate($from);
+    }
+    100% {
+      transform: rotate($to);
+    }
+  }
+}
+@include animation-mixin2(rotate_0_0, 0deg, 0deg);
+@include animation-mixin2(rotate_0_45, 0deg, 45deg);
+@include animation-mixin2(rotate_0_90, 0deg, 90deg);
+@include animation-mixin2(rotate_0_135, 0deg, 45deg);
+@include animation-mixin2(rotate_0_180, 0deg, 180deg);
+
+@include animation-mixin2(rotate_45_0, 45deg, 0deg);
+@include animation-mixin2(rotate_45_45, 45deg, 45deg);
+@include animation-mixin2(rotate_45_90, 45deg, 90deg);
+@include animation-mixin2(rotate_45_135, 45deg, 45deg);
+@include animation-mixin2(rotate_45_180, 45deg, 180deg);
+
+@include animation-mixin2(rotate_90_0, 90deg, 0deg);
+@include animation-mixin2(rotate_90_45, 90deg, 45deg);
+@include animation-mixin2(rotate_90_90, 90deg, 90deg);
+@include animation-mixin2(rotate_90_135, 90deg, 45deg);
+@include animation-mixin2(rotate_90_180, 90deg, 180deg);
+
+@include animation-mixin2(rotate_135_0, 135deg, 0deg);
+@include animation-mixin2(rotate_135_45, 135deg, 45deg);
+@include animation-mixin2(rotate_135_90, 135deg, 90deg);
+@include animation-mixin2(rotate_135_135, 135deg, 45deg);
+@include animation-mixin2(rotate_135_180, 135deg, 180deg);
+
+@include animation-mixin2(rotate_180_0, 180deg, 0deg);
+@include animation-mixin2(rotate_180_45, 180deg, 45deg);
+@include animation-mixin2(rotate_180_90, 180deg, 90deg);
+@include animation-mixin2(rotate_180_135, 180deg, 45deg);
+@include animation-mixin2(rotate_180_180, 180deg, 180deg);
+
+@include animation-mixin(rotate_45, 45deg);
+@include animation-mixin(rotate_90, 90deg);
+@include animation-mixin(rotate_135, 135deg);
+@include animation-mixin(rotate_180, 180deg);
+
+.circle {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.line {
+  height: 3rem;
+  width: 0.2rem;
+  background: black;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+// ------------------- From 0 -------------------------
+.rotate_0_0_ob {
+  animation-name: rotate_0_0;
+  transform-origin: bottom center;
+}
+
+.rotate_0_45_ob {
+  animation-name: rotate_0_45;
+  transform-origin: bottom center;
+}
+
+.rotate_0_90_ob {
+  animation-name: rotate_0_90;
+  transform-origin: bottom center;
+}
+
+.rotate_0_135_ob {
+  animation-name: rotate_0_135;
+  transform-origin: bottom center;
+}
+
+.rotate_0_180_ob {
+  animation-name: rotate_0_180;
+  transform-origin: bottom center;
+}
+
+.rotate_0_0_ot {
+  animation-name: rotate_0_0;
+  transform-origin: top center;
+}
+
+.rotate_0_45_ot {
+  animation-name: rotate_0_45;
+  transform-origin: top center;
+}
+
+.rotate_0_90_ot {
+  animation-name: rotate_0_90;
+  transform-origin: top center;
+}
+
+.rotate_0_135_ot {
+  animation-name: rotate_0_135;
+  transform-origin: top center;
+}
+
+.rotate_0_180_ot {
+  animation-name: rotate_0_180;
+  transform-origin: top center;
+}
+
+// ------------------- From 45 -------------------------
+.rotate_45_0_ob {
+  animation-name: rotate_45_0;
+  transform-origin: bottom center;
+}
+
+.rotate_45_45_ob {
+  animation-name: rotate_45_45;
+  transform-origin: bottom center;
+}
+
+.rotate_45_90_ob {
+  animation-name: rotate_45_90;
+  transform-origin: bottom center;
+}
+
+.rotate_45_135_ob {
+  animation-name: rotate_45_135;
+  transform-origin: bottom center;
+}
+
+.rotate_45_180_ob {
+  animation-name: rotate_45_180;
+  transform-origin: bottom center;
+}
+
+.rotate_45_0_ot {
+  animation-name: rotate_45_0;
+  transform-origin: top center;
+}
+
+.rotate_45_45_ot {
+  animation-name: rotate_45_45;
+  transform-origin: top center;
+}
+
+.rotate_45_90_ot {
+  animation-name: rotate_45_90;
+  transform-origin: top center;
+}
+
+.rotate_45_135_ot {
+  animation-name: rotate_45_135;
+  transform-origin: top center;
+}
+
+.rotate_45_180_ot {
+  animation-name: rotate_45_180;
+  transform-origin: top center;
+}
+
+// ------------------- From 90 -------------------------
+.rotate_90_0_ob {
+  animation-name: rotate_90_0;
+  transform-origin: bottom center;
+}
+
+.rotate_90_45_ob {
+  animation-name: rotate_90_45;
+  transform-origin: bottom center;
+}
+
+.rotate_90_90_ob {
+  animation-name: rotate_90_90;
+  transform-origin: bottom center;
+}
+
+.rotate_90_135_ob {
+  animation-name: rotate_90_135;
+  transform-origin: bottom center;
+}
+
+.rotate_90_180_ob {
+  animation-name: rotate_90_180;
+  transform-origin: bottom center;
+}
+
+.rotate_90_0_ot {
+  animation-name: rotate_90_0;
+  transform-origin: top center;
+}
+
+.rotate_90_45_ot {
+  animation-name: rotate_90_45;
+  transform-origin: top center;
+}
+
+.rotate_90_90_ot {
+  animation-name: rotate_90_90;
+  transform-origin: top center;
+}
+
+.rotate_90_135_ot {
+  animation-name: rotate_90_135;
+  transform-origin: top center;
+}
+
+.rotate_90_180_ot {
+  animation-name: rotate_90_180;
+  transform-origin: top center;
+}
+
+// ------------------- From 135 -------------------------
+.rotate_135_0_ob {
+  animation-name: rotate_135_0;
+  transform-origin: bottom center;
+}
+
+.rotate_135_45_ob {
+  animation-name: rotate_135_45;
+  transform-origin: bottom center;
+}
+
+.rotate_135_90_ob {
+  animation-name: rotate_135_90;
+  transform-origin: bottom center;
+}
+
+.rotate_135_135_ob {
+  animation-name: rotate_135_135;
+  transform-origin: bottom center;
+}
+
+.rotate_135_180_ob {
+  animation-name: rotate_135_180;
+  transform-origin: bottom center;
+}
+
+.rotate_135_0_ot {
+  animation-name: rotate_135_0;
+  transform-origin: top center;
+}
+
+.rotate_135_45_ot {
+  animation-name: rotate_135_45;
+  transform-origin: top center;
+}
+
+.rotate_135_90_ot {
+  animation-name: rotate_135_90;
+  transform-origin: top center;
+}
+
+.rotate_135_135_ot {
+  animation-name: rotate_135_135;
+  transform-origin: top center;
+}
+
+.rotate_135_180_ot {
+  animation-name: rotate_135_180;
+  transform-origin: top center;
+}
+
+// ------------------- From 189 -------------------------
+.rotate_180_0_ob {
+  animation-name: rotate_180_0;
+  transform-origin: bottom center;
+}
+
+.rotate_180_45_ob {
+  animation-name: rotate_180_45;
+  transform-origin: bottom center;
+}
+
+.rotate_180_90_ob {
+  animation-name: rotate_180_90;
+  transform-origin: bottom center;
+}
+
+.rotate_180_135_ob {
+  animation-name: rotate_180_135;
+  transform-origin: bottom center;
+}
+
+.rotate_180_180_ob {
+  animation-name: rotate_180_180;
+  transform-origin: bottom center;
+}
+
+.rotate_180_0_ot {
+  animation-name: rotate_180_0;
+  transform-origin: top center;
+}
+
+.rotate_180_45_ot {
+  animation-name: rotate_180_45;
+  transform-origin: top center;
+}
+
+.rotate_180_90_ot {
+  animation-name: rotate_180_90;
+  transform-origin: top center;
+}
+
+.rotate_180_135_ot {
+  animation-name: rotate_180_135;
+  transform-origin: top center;
+}
+
+.rotate_180_180_ot {
+  animation-name: rotate_180_180;
+  transform-origin: top center;
+}
