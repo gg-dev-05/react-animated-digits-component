@@ -26,8 +26,7 @@ const defaults = {
 export const DigitContext = React.createContext(defaults)
 
 
-const Digits: React.FC<DigitProps> = (props) => {
-
+const Digits: React.FC<DigitProps> = (props: DigitProps) => {
     const {
         previousValue=defaults.previousValue, 
         currentValue = defaults.currentValue, 
