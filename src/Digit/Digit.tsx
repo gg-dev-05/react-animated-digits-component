@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
 import Circle from '../Circle/Circle'
 import {output} from '../logic'
-import {DigitContext} from '../..'
+import {DigitContext} from '..'
 import './Digit.scss'
 
-const { v4: uuidv4 } = require('uuid');
+import { v4 as uuidv4 } from 'uuid';
 
 function Digit({previousDigit=0, currentDigit=0}) {
 

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "start": "rollup -c -w"
   },
   "repository": {
     "type": "git",
@@ -31,5 +32,15 @@
   },
   "dependencies": {
     "uuid": "^8.3.2"
-  }
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "files": ["dist"],
+  "keywords": [
+    "react",
+    "typescript",
+    "npm"
+  ]
 }
