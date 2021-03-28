@@ -1,6 +1,6 @@
 {
   "name": "react-animated-digits-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/gg-dev-05/react-animated-digits-component/issues"
   },
-  "homepage": "https://github.com/gg-dev-05/react-animated-digits-component#readme",
+  "homepage": "https://react-animated-digits.netlify.app/",
   "devDependencies": {
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
