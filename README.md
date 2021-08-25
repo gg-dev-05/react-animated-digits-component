@@ -1,6 +1,6 @@
 # REACT ANIMATED DIGITS COMPONENT
 
-A react component to display digits in an animated way.
+A react component to display digits in an animated way. (Inspired by this [reddit](https://www.reddit.com/r/Damnthatsinteresting/comments/p6q5pg/a_clock_of_clocks/) post)
 
 Check out the live demo of the component [here](https://react-animated-digits.netlify.app/)
 
